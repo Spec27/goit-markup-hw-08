@@ -1,0 +1,11 @@
+@mixin font($fw, $fz, $lh) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+}
+@mixin pading($pt, $pr, $pb, $pl) {
+  padding-top: $pt;
+  padding-right: $pr;
+  padding-bottom: $pb;
+  padding-left: $pl;
+}
