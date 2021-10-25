@@ -54,8 +54,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 15px;
+  padding-right: 0;
+  padding-bottom: 15px;
+  padding-left: 0;
 }
 
 .logo {
@@ -156,8 +158,10 @@ body {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   background: transparent;
-  padding-left: 42px;
+  padding-top: 0;
   padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 42px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -187,7 +191,10 @@ body {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px 16px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
   resize: none;
   background: transparent;
   outline: none;
@@ -315,7 +322,9 @@ body {
 .main-nav__site-nav .link {
   display: block;
   padding-top: 32px;
+  padding-right: 0;
   padding-bottom: 32px;
+  padding-left: 0;
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -366,7 +375,9 @@ body {
   text-align: center;
   border-color: #2f303a;
   padding-top: 200px;
+  padding-right: 0;
   padding-bottom: 200px;
+  padding-left: 0;
 }
 
 .overlay {
@@ -394,7 +405,10 @@ body {
 
 /* button */
 .button {
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
   font-weight: 700;
@@ -420,7 +434,9 @@ body {
 
 .section.skr {
   padding-top: 94px;
+  padding-right: 0;
   padding-bottom: 94px;
+  padding-left: 0;
 }
 
 .skroll-list {
@@ -530,16 +546,18 @@ body {
   width: 370px;
   height: 70px;
   padding-top: 27px;
+  padding-right: 82px;
   padding-bottom: 27px;
   padding-left: 83px;
-  padding-right: 82px;
   background: rgba(47, 48, 58, 0.8);
 }
 
 .command-section {
   background-color: #f5f4fa;
   padding-top: 94px;
+  padding-right: 0;
   padding-bottom: 94px;
+  padding-left: 0;
 }
 
 .command-section__command-title {
@@ -558,7 +576,9 @@ body {
 
 .command-list-container {
   padding-top: 30px;
+  padding-right: 0;
   padding-bottom: 30px;
+  padding-left: 0;
 }
 
 .command-list-container__command-list-title {
@@ -638,7 +658,9 @@ body {
 
 .client-section {
   padding-top: 94px;
+  padding-right: 0;
   padding-bottom: 94px;
+  padding-left: 0;
 }
 
 .client-section__klient-title {
@@ -705,18 +727,24 @@ body {
 
 .futter-div-address {
   padding-top: 59px;
+  padding-right: 0;
   padding-bottom: 61px;
+  padding-left: 0;
 }
 
 .futter-div-social {
   padding-top: 72px;
+  padding-right: 0;
   padding-bottom: 100px;
+  padding-left: 0;
   margin-right: 93px;
 }
 
 .futter-div-form {
   padding-top: 72px;
+  padding-right: 0;
   padding-bottom: 100px;
+  padding-left: 0;
 }
 
 .footer-contact__footer-li {
@@ -897,7 +925,9 @@ body {
 .portfolio-site-nav .link {
   display: block;
   padding-top: 32px;
+  padding-right: 0;
   padding-bottom: 32px;
+  padding-left: 0;
   color: var(--title-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -927,7 +957,9 @@ body {
 .portfolio-contact-nav .link {
   display: block;
   padding-top: 32px;
+  padding-right: 0;
   padding-bottom: 32px;
+  padding-left: 0;
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -938,7 +970,10 @@ body {
 
 .button-portfolio {
   color: var(--title-text-color);
-  padding: 6px 22px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -963,8 +998,10 @@ body {
 
 /* portfolio list */
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 92px;
+  padding-right: 0;
+  padding-bottom: 92px;
+  padding-left: 0;
 }
 
 .portfolio-button {
@@ -1015,7 +1052,7 @@ body {
 .portfolio-list-paragraph {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
@@ -1042,7 +1079,10 @@ body {
 .text-description {
   position: absolute;
   height: 100%;
-  padding: 63px 24px;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
@@ -1066,7 +1106,10 @@ body {
 }
 
 .portfolio-list-div {
-  padding: 20px 24px 20px 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .portfolio-list-title {
@@ -1099,18 +1142,24 @@ body {
 
 .portfolio-footer-address {
   padding-top: 59px;
+  padding-right: 0;
   padding-bottom: 61px;
+  padding-left: 0;
 }
 
 .portfolio-footer-social {
   padding-top: 72px;
+  padding-right: 0;
   padding-bottom: 100px;
+  padding-left: 0;
   margin-right: 93px;
 }
 
 .portfolio-futter-div-form {
   padding-top: 72px;
+  padding-right: 0;
   padding-bottom: 100px;
+  padding-left: 0;
 }
 
 .portfolio-footer-li {

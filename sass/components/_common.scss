@@ -25,7 +25,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
-  @include padding(15px, 0, 15px, 0);
+  @include pading(15px, 0, 15px, 0);
 }
 .logo {
   display: flex;
