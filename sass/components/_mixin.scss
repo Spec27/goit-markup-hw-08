@@ -3,7 +3,7 @@
   font-size: $fz;
   line-height: $lh;
 }
-@mixin pading($pt, $pr, $pb, $pl) {
+@mixin padding($pt, $pr, $pb, $pl) {
   padding-top: $pt;
   padding-right: $pr;
   padding-bottom: $pb;

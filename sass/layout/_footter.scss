@@ -5,14 +5,14 @@
   display: flex;
 }
 .futter-div-address {
-  @include pading(59px, 0, 61px, 0);
+  @include padding(59px, 0, 61px, 0);
 }
 .futter-div-social {
-  @include pading(72px, 0, 100px, 0);
+  @include padding(72px, 0, 100px, 0);
   margin-right: 93px;
 }
 .futter-div-form {
-  @include pading(72px, 0, 100px, 0);
+  @include padding(72px, 0, 100px, 0);
 }
 
 .footer-contact__footer-li {

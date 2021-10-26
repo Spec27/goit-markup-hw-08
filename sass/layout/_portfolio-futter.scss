@@ -6,14 +6,14 @@
   display: flex;
 }
 .portfolio-footer-address {
-  @include pading(59px, 0, 61px, 0);
+  @include padding(59px, 0, 61px, 0);
 }
 .portfolio-footer-social {
-  @include pading(72px, 0, 100px, 0);
+  @include padding(72px, 0, 100px, 0);
   margin-right: 93px;
 }
 .portfolio-futter-div-form {
-  @include pading(72px, 0, 100px, 0);
+  @include padding(72px, 0, 100px, 0);
 }
 .portfolio-footer-li {
   margin-bottom: 9px;

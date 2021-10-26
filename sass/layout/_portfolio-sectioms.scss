@@ -1,6 +1,6 @@
 .button-portfolio {
   color: var(--title-text-color);
-  @include pading(6px, 22px, 6px, 22px);
+  @include padding(6px, 22px, 6px, 22px);
   @include font(500, 16px, 1.62);
   text-align: center;
   letter-spacing: 0.03em;
@@ -24,7 +24,7 @@
 
 /* portfolio list */
 .portfolio-section {
-  @include pading(92px, 0, 92px, 0);
+  @include padding(92px, 0, 92px, 0);
 }
 .portfolio-button {
   display: flex;
@@ -93,7 +93,7 @@
 .text-description {
   position: absolute;
   height: 100%;
-  @include pading(63px, 24px, 63px, 24px);
+  @include padding(63px, 24px, 63px, 24px);
   font-family: Roboto;
   font-style: normal;
   @include font(400, 18px, 1.56);
@@ -114,7 +114,7 @@
   }
 }
 .portfolio-list-div {
-  @include pading(20px, 24px, 20px, 24px);
+  @include padding(20px, 24px, 20px, 24px);
 }
 .portfolio-list-title {
   font-family: Roboto;
