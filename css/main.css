@@ -662,7 +662,6 @@ body {
 }
 
 .command-section__command-list-element:nth-child(4n) {
-  margin-right: 0;
   margin-bottom: 0;
 }
 
