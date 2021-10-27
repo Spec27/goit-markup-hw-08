@@ -1,17 +1,44 @@
 .section.skr {
-  @include padding(94px, 0, 94px, 0);
+  @include padding(60px, 0, 60px, 0);
+  @media screen and(min-width:1200px) {
+    @include padding(94px, 0, 94px, 0);
+  }
 }
 
 .skroll-list {
-  display: flex;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
 }
 
 .skroll-list__element {
-  width: 270px;
-  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 30px;
   &:nth-child(4) {
-    margin-right: 0;
+    margin-bottom: 0;
   }
+  @media screen and(min-width:768px) {
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+    margin-bottom: 0;
+    margin-right: 30px;
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+  }
+
   &::before {
     display: block;
     content: '';
@@ -50,6 +77,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media (mi-width: 320px), (max-width: 1200px) {
+    text-align: center;
+  }
 }
 .skroll-list__paragraph {
   margin: 0;
