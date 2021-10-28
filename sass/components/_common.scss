@@ -54,6 +54,9 @@ body {
 
 .futter-logo {
   margin-bottom: 20px;
+  @media screen and(max-width:1199px) {
+    justify-content: center;
+  }
 }
 .span-futter-logo {
   color: #ffffff;
