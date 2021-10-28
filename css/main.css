@@ -829,15 +829,9 @@ body {
   padding-right: 0;
   padding-bottom: 60px;
   padding-left: 0;
-}
-
-@media screen and (min-width: 1200px) {
-  .client-section {
-    padding-top: 94px;
-    padding-right: 0;
-    padding-bottom: 94px;
-    padding-left: 0;
-  }
+  /* @media screen and(min-width:1200px) {
+    @include padding(94px, 0, 94px, 0);
+  } */
 }
 
 .client-section__klient-title {
