@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spec</title>
@@ -14,9 +15,9 @@
 
 
     <!-- шапка -->
-    <!-- <header class=" page-header">
+    <header class=" page-header">
         <div class="container">
-            <nav class=" main-nav">
+            <nav class="main-nav">
                 <a href="./index.html" class="logo">Web<span class="span-nav-logo">Studio</span></a>
                 <ul class="main-nav__site-nav list">
                     <li class="main-nav__site-navigation item"><a href="" class="link current">Студия</a></li>
@@ -39,10 +40,51 @@
                             </svg>+38 099 111 11 11</a>
                     </li>
                 </ul>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobil-menu">
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="menu-toggle__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                    </svg></button>
+
+
+                <div class="menu-container js-menu-container" id="mobil-menu">
+                    <button type="button" class="menu-toggle js-close-menu">
+                        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                            <use class="menu-toggle__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg></button>
+                    </button>
+                    <ul class="nav-menu list text">
+                        <li class="nav-menu__navigation item "><a href="" class="nav-menu__link link current">Студия</a>
+                        </li>
+                        <li class="nav-menu__navigation item"><a href="./portfolio.html"
+                                class="nav-menu__link link">Портфолио</a>
+                        </li>
+                        <li class="nav-menu__navigation item"><a href="" class="nav-menu__link link">Контакты</a></li>
+                    </ul>
+                    <ul class="contact-nav-menu list text">
+                        <li class="contact-nav-menu__navigation">
+                            <a href="tel:+380991111111" class="tel-link-menu link">38 099 111 11 11</a>
+                        </li>
+                        <li class="contact-nav-menu__navigation">
+                            <a href="mailto:info@example.com" class="mail-link-menu link">info@example.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="social-nav-menu list text">
+                        <li class="social-nav-menu__navigation "><a href="Instagram"
+                                class="social-nav-menu__link">Instagram</a></li>
+                        <li class="social-nav-menu__navigation "><a href="Twitter"
+                                class="social-nav-menu__link">Twitter</a></li>
+                        <li class="social-nav-menu__navigation "><a href="Facebook"
+                                class="social-nav-menu__link">Facebook</a></li>
+                        <li class="social-nav-menu__navigation "><a href="LinkedIn"
+                                class="social-nav-menu__link">LinkedIn</a></li>
+                    </ul>
+
+                </div>
             </nav>
         </div>
 
-    </header> -->
+    </header>
     <main>
         <!--герой-->
         <section class="hero overlay">
@@ -54,7 +96,7 @@
             <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </section>
         <!--перечень-->
-        <section class="section skr">
+        <!--  <section class="section skr">
             <div class="container skroll">
                 <ul class="skroll-list list">
                     <li class="skroll-list__element icon-antena ">
@@ -87,9 +129,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--чем мы занимаемся-->
-        <section class="section-work">
+        <!--  <section class="section-work">
             <div class="container section">
                 <h2 class="section-work__title">Чем мы занимаемся</h2>
                 <ul class="section-work__list list">
@@ -113,9 +155,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!--наша команда-->
-        <section class="command-section">
+        <!--    <section class="command-section">
             <div class="container command">
                 <h2 class="command-section__command-title">Наша команда</h2>
                 <ul class="command-section__command-list list">
@@ -270,9 +312,9 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
         <!-- Постоянные клиенты -->
-        <section class="client-section">
+        <!--   <section class="client-section">
             <div class="container client ">
                 <h2 class="client-section__klient-title">Постоянные клиенты</h2>
                 <ul class="client-section__client-list list">
@@ -312,10 +354,10 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
     </main>
     <!--футер-->
-    <footer class="footer">
+    <!--  <footer class="footer">
 
         <div class="container futter-div">
 
@@ -377,7 +419,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- -------------------------MODALKA-------------------- -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal"><button type="button" class="close-btn" data-modal-close>
@@ -431,6 +473,10 @@
     </div>
     <!-- ------------------JS---------------- -->
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
     </body>
 
 </html>
