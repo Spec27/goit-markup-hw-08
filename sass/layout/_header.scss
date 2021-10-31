@@ -4,13 +4,14 @@
 .main-nav {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 /* site nav */
 .main-nav__site-nav {
   display: flex;
-  position: relative;
   @include font(500, 14px, 1.14);
+
   letter-spacing: 0.02em;
   margin-left: 93px;
   @media screen and(max-width:768px) {
@@ -55,30 +56,37 @@
 }
 /* contact nav */
 .main-nav__contact-nav {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  display: block;
+  @include font(500, 12px, 1.16);
   letter-spacing: 0.02em;
   margin-left: auto;
   @media screen and(max-width:768px) {
     display: none;
   }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    @include font(500, 14px, 1.14);
+  }
 }
 .main-nav__contact-nav .main-nav__item {
   & + .main-nav__item {
-    margin-left: 50px;
+    @media screen and(min-width:1200px) {
+      margin-left: 50px;
+    }
   }
 }
 .main-nav__contact-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -89,7 +97,13 @@
   justify-content: center;
   fill: currentColor;
 }
+.all-navigation {
+  position: relative;
+}
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -102,14 +116,20 @@
     fill: #2196f3;
   }
 }
+@media screen and(min-width:768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 48px;
-  padding-left: 40px;
+  overflow-y: scroll;
+  padding-left: 45px;
+  padding-bottom: 48px;
   background-color: #ffffff;
   transform: translateX(100%);
   transition: 250ms ease-in-out;
@@ -119,10 +139,14 @@
 }
 
 .nav-menu {
+  padding-top: 48px;
   margin-bottom: 306px;
 }
 .nav-menu__navigation {
   margin-bottom: 32px;
+  &:nth-child(3n) {
+    margin-bottom: 0;
+  }
 }
 .nav-menu__navigation .link {
   &:focus,
@@ -142,6 +166,9 @@
 }
 .contact-nav-menu__navigation {
   margin-bottom: 32px;
+  &:nth-child(2n) {
+    margin-bottom: 0;
+  }
 }
 .tel-link-menu {
   font-family: Roboto;
@@ -160,6 +187,9 @@
 }
 .social-nav-menu {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .social-nav-menu__navigation {
   position: relative;
