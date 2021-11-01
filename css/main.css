@@ -1432,7 +1432,7 @@ body.modal-open {
   content: '';
   position: absolute;
   height: 4px;
-  width: 48px;
+  width: 78px;
   border-radius: 2px;
   background-color: var(--accent-color);
   justify-content: center;
