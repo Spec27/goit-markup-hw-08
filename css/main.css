@@ -1297,7 +1297,13 @@ body.modal-open {
 
 .nav-menu {
   padding-top: 48px;
-  margin-bottom: 306px;
+}
+
+.mob-menu-content {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav-menu__navigation {
@@ -1392,10 +1398,6 @@ body.modal-open {
 
 .page-header {
   position: relative;
-}
-
-.link.current {
-  color: #2196f3;
 }
 
 .portf-nav {

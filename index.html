@@ -56,26 +56,30 @@
                                 class="nav-menu__link link">Портфолио</a>
                         </li>
                         <li class="nav-menu__navigation item"><a href="" class="nav-menu__link link">Контакты</a></li>
-                    </ul>
-                    <ul class="contact-nav-menu list text">
-                        <li class="contact-nav-menu__navigation">
-                            <a href="tel:+380991111111" class="tel-link-menu link">38 099 111 11 11</a>
-                        </li>
-                        <li class="contact-nav-menu__navigation">
-                            <a href="mailto:info@example.com" class="mail-link-menu link">info@example.com</a>
-                        </li>
+
                     </ul>
 
-                    <ul class="social-nav-menu list text">
-                        <li class="social-nav-menu__navigation "><a href="Instagram"
-                                class="social-nav-menu__link">Instagram</a></li>
-                        <li class="social-nav-menu__navigation "><a href="Twitter"
-                                class="social-nav-menu__link">Twitter</a></li>
-                        <li class="social-nav-menu__navigation "><a href="Facebook"
-                                class="social-nav-menu__link">Facebook</a></li>
-                        <li class="social-nav-menu__navigation "><a href="LinkedIn"
-                                class="social-nav-menu__link">LinkedIn</a></li>
-                    </ul>
+                    <div class="mob-menu-content">
+                        <ul class="contact-nav-menu list text">
+                            <li class="contact-nav-menu__navigation">
+                                <a href="tel:+380991111111" class="tel-link-menu link">38 099 111 11 11</a>
+                            </li>
+                            <li class="contact-nav-menu__navigation">
+                                <a href="mailto:info@example.com" class="mail-link-menu link">info@example.com</a>
+                            </li>
+                        </ul>
+
+                        <ul class="social-nav-menu list text">
+                            <li class="social-nav-menu__navigation "><a href="Instagram"
+                                    class="social-nav-menu__link">Instagram</a></li>
+                            <li class="social-nav-menu__navigation "><a href="Twitter"
+                                    class="social-nav-menu__link">Twitter</a></li>
+                            <li class="social-nav-menu__navigation "><a href="Facebook"
+                                    class="social-nav-menu__link">Facebook</a></li>
+                            <li class="social-nav-menu__navigation "><a href="LinkedIn"
+                                    class="social-nav-menu__link">LinkedIn</a></li>
+                        </ul>
+                    </div>
 
                 </div>
             </nav>
@@ -134,19 +138,25 @@
                 <ul class="section-work__list list">
                     <li class="section-work__element">
                         <div class="conteiner-work">
-                            <img src="./images/1.jpg" alt=" набо текста на клавиатуре" width="370" />
+                            <img srcset=" ./images/wor-img/img.jpg 1x,                   
+                            ./images/wor-img/img-2x.jpg 2x" src="./images/wor-img/img.jpg"
+                                alt=" набо текста на клавиатуре" width="370" />
                             <h3 class="section-work__work">Десктопные приложения</h3>
                         </div>
                     </li>
                     <li class="section-work__element">
                         <div class="conteiner-work">
-                            <img src="./images/2.jpg" alt="рука с телефоном перед ноутбуком" width="370" />
+                            <img srcset=" ./images/wor-img/box.jpg 1x,                   
+                            ./images/wor-img/box-2x.jpg 2x" src="./images/wor-img/box.jpg"
+                                alt="рука с телефоном перед ноутбуком" width="370" />
                             <h3 class="section-work__work">Мобильные приложения</h3>
                         </div>
                     </li>
                     <li class="section-work__element">
                         <div class="conteiner-work">
-                            <img src="./images/3.jpg" alt="графический планшет в руке" width="370" />
+                            <img srcset=" ./images/wor-img/tv.jpg 1x,                   
+                            ./images/wor-img/tv-2x.jpg 2x" src="./images/wor-img/tv.jpg"
+                                alt="графический планшет в руке" width="370" />
                             <h3 class="section-work__work">Дизайнерские решения</h3>
                         </div>
                     </li>
@@ -159,7 +169,11 @@
                 <h2 class="command-section__command-title">Наша команда</h2>
                 <ul class="command-section__command-list list">
                     <li class="command-section__command-list-element">
-                        <a href=""><img src="./images/4.jpg" alt="Игорь Демьяненко" width="270" /></a>
+                        <a href="">
+                            <img srcset="./images/mobile-product-designer.jpg 1x , 
+                            ./images/mobile-product-designer-2x.jpg 2x:" src="./images/mobile-product-designer.jpg"
+                                alt="Игорь Демьяненко" width="450" />
+                        </a>
                         <div class="command-list-container">
                             <h3 class="command-list-container__command-list-title">Игорь Демьяненко</h3>
                             <p class="command-list-container__command-list-paragraph">Product Designer</p>
@@ -196,7 +210,10 @@
                         </div>
                     </li>
                     <li class="command-section__command-list-element">
-                        <a href=""><img src="./images/5.jpg" alt="Ольга Репина" width="270" /></a>
+                        <a href=""><img srcset="
+                            ./images/mobile-frontend-developer.jpg 1x,                   
+                            ./images/mobile-frontend-developer-2x.jpg 2x" src="./images/mobile-frontend-developer.jpg"
+                                alt="Игорь Демьяненко" width="450" /></a>
                         <div class="command-list-container">
                             <h3 class="command-list-container__command-list-title">Ольга Репина</h3>
                             <p class="command-list-container__command-list-paragraph">Frontend Developer</p>
@@ -233,7 +250,10 @@
                         </div>
                     </li>
                     <li class="command-section__command-list-element">
-                        <a href=""><img src="./images/6.jpg" alt="Николай Тарасов" width="270" /></a>
+                        <a href=""><img srcset="
+                            ./images/mobile-marketing.jpg 1x,                   
+                            ./images/mobile-marketing-2x.jpg 2x" src="./images/mobile-marketing.jpg"
+                                alt="Николай Тарасов" width="450" /></a>
                         <div class="command-list-container">
                             <h3 class="command-list-container__command-list-title">Николай Тарасов</h3>
                             <p class="command-list-container__command-list-paragraph">Marketing</p>
@@ -270,7 +290,10 @@
                         </div>
                     </li>
                     <li class="command-section__command-list-element">
-                        <a href=""><img src="./images/7.jpg" alt="Михаил Ермаков" width="270" /></a>
+                        <a href=""><img srcset="
+                            ./images/mobile-ui-designer.jpg 1x,                   
+                            ./images/mobile-ui-designer-2x.jpg 2x" src="./images/mobile-ui-designer.jpg"
+                                alt="Михаил Ермаков" width="450" /></a>
                         <div class="command-list-container">
                             <h3 class="command-list-container__command-list-title">Михаил Ермаков</h3>
                             <p class="command-list-container__command-list-paragraph">UI Designer</p>

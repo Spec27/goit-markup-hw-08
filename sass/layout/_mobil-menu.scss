@@ -46,7 +46,12 @@
 
 .nav-menu {
   padding-top: 48px;
-  margin-bottom: 306px;
+}
+.mob-menu-content {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .nav-menu__navigation {
   margin-bottom: 32px;
