@@ -1,6 +1,10 @@
 .all-navigation {
   position: relative;
 }
+.link.current {
+  color: #2196f3;
+}
+
 .menu-toggle {
   position: absolute;
   top: 10px;

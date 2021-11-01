@@ -1247,6 +1247,10 @@ body.modal-open {
   position: relative;
 }
 
+.link.current {
+  color: #2196f3;
+}
+
 .menu-toggle {
   position: absolute;
   top: 10px;
@@ -1388,6 +1392,10 @@ body.modal-open {
 
 .page-header {
   position: relative;
+}
+
+.link.current {
+  color: #2196f3;
 }
 
 .portf-nav {
