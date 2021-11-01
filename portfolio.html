@@ -17,10 +17,14 @@
 
 <body>
     <!--Шапка-->
-    <!-- <header class=" page-header ">
-        <div class="container">
+    <header class=" page-header ">
+        <div class="container all-navigation">
             <nav class="portf-nav">
                 <a href="./index.html" class="logo">Web<span class="span-nav-logo">Studio</span></a>
+                <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobil-menu">
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="menu-toggle__icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                    </svg></button>
                 <ul class="portfolio-site-nav  list">
                     <li class="portfolio-site-navigation item"><a href="./index.html" class="link ">Студия</a></li>
                     <li class="portfolio-site-navigation item"><a href="./portfolio.html"
@@ -41,9 +45,44 @@
                             </svg>+38 099 111 11 11</a>
                     </li>
                 </ul>
+                <!-- MOBIL MENU -->
+                <div class="menu-container js-menu-container" id="mobil-menu">
+                    <button type="button" class="menu-toggle js-close-menu">
+                        <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                            <use class="menu-toggle__icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+                        </svg></button>
+                    <ul class="nav-menu list text">
+                        <li class="nav-menu__navigation item "><a href="" class="nav-menu__link link current">Студия</a>
+                        </li>
+                        <li class="nav-menu__navigation item"><a href="./portfolio.html"
+                                class="nav-menu__link link">Портфолио</a>
+                        </li>
+                        <li class="nav-menu__navigation item"><a href="" class="nav-menu__link link">Контакты</a></li>
+                    </ul>
+                    <ul class="contact-nav-menu list text">
+                        <li class="contact-nav-menu__navigation">
+                            <a href="tel:+380991111111" class="tel-link-menu link">38 099 111 11 11</a>
+                        </li>
+                        <li class="contact-nav-menu__navigation">
+                            <a href="mailto:info@example.com" class="mail-link-menu link">info@example.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="social-nav-menu list text">
+                        <li class="social-nav-menu__navigation "><a href="Instagram"
+                                class="social-nav-menu__link">Instagram</a></li>
+                        <li class="social-nav-menu__navigation "><a href="Twitter"
+                                class="social-nav-menu__link">Twitter</a></li>
+                        <li class="social-nav-menu__navigation "><a href="Facebook"
+                                class="social-nav-menu__link">Facebook</a></li>
+                        <li class="social-nav-menu__navigation "><a href="LinkedIn"
+                                class="social-nav-menu__link">LinkedIn</a></li>
+                    </ul>
+
+                </div>
             </nav>
         </div>
-    </header> -->
+    </header>
     <main>
         <!--портфолю-->
         <h1 class="visually-hidden">Портфолио</h1>
@@ -269,6 +308,12 @@
 
         </div>
     </footer>
+    <!-- JS -->
+    <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
