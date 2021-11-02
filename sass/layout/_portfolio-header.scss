@@ -102,3 +102,12 @@
   justify-content: center;
   fill: currentColor;
 }
+.item {
+  margin-bottom: 10px;
+  &:nth-child(2) {
+    margin-bottom: 0;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
+}

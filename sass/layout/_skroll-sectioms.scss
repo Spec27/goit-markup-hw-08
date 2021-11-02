@@ -81,7 +81,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  @media (mi-width: 320px), (max-width: 1200px) {
+  @media (mi-width: 320px), (max-width: 768px) {
     text-align: center;
   }
 }
